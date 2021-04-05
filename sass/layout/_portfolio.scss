@@ -1,0 +1,121 @@
+.projects {
+  background-color: var(--primary-white-color);
+  padding-top: var(--section-inner-padding);
+}
+/* --- filter---*/
+.filter__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  display: inline-block;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter__button {
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+  background-color: var(--team-section-bground);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 6px 22px 6px 22px;
+  transition-property: background-color, color, outline, box-shadow;
+  transition-duration: var(--accent-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    outline: none; /* border: none; */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(196, 172, 172, 0.12);
+  }
+}
+/*---Cards list---*/
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+  padding-bottom: var(--section-inner-padding);
+}
+
+.cards__item {
+  display: flex;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  background: var(--primary-white-color);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 30px;
+  transition-property: box-shadow;
+  transition-duration: var(--accent-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.cards__image {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*---Синий оверлей с текстом---*/
+.cards__img-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  transition-property: transform;
+  transition-duration: var(--accent-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 100ms;
+  .cards__link:hover &,
+  .cards__link:focus & {
+    transform: translateY(-100%);
+  }
+}
+
+/*ТЕКСТ КАРТОЧКИ*/
+.cards__description {
+  padding: 20px 24px 20px 24px;
+}
+
+.cards__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.cards__type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--prime-text-color);
+}

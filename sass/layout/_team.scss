@@ -1,0 +1,58 @@
+.team {
+  background: var(--team-section-bground);
+  padding-top: var(--section-inner-padding);
+  padding-bottom: var(--section-inner-padding);
+}
+
+.team__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.team__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__box {
+  margin: 0 auto;
+  padding: 30px 32px;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--primary-white-color);
+}
+
+.team__name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__profession {
+  color: var(--prime-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 16px; /*отступ до списка соц.линков*/
+}

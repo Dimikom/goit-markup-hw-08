@@ -1,0 +1,36 @@
+@mixin address($col, $fw, $fs, $lh, $ls) {
+  color: $col;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+.address-box {
+  font-style: normal;
+  margin-top: 20px;
+  padding-right: 12px;
+}
+
+.address-box__list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-box__item .link {
+  @include address(var(--primary-white-color), 400, 14px, 1.71, 0.03em);
+
+  // color: var(--primary-white-color);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+}
+
+.address-box__item a {
+  @include address(var(--footer-adr-color), 400, 14px, 1.71, 0.03em);
+  // color: var(--footer-adr-color);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
+}
