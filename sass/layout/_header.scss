@@ -1,8 +1,19 @@
 .header {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
-  background-color: var(--primary-white-color);
 }
+
+.navigation__list {
+  display: none;
+}
+
+.header-contacts__list {
+  display: none;
+}
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   border-bottom: 1px solid rgba(236, 236, 236, 1);
+//   background-color: var(--primary-white-color);
+// }
