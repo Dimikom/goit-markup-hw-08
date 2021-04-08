@@ -144,6 +144,12 @@ ol {
   outline: 1px solid orange;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -388,6 +394,11 @@ ol {
   border-radius: 4px;
 }
 
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .navigation__list {
   display: none;
 }
@@ -396,31 +407,33 @@ ol {
   display: none;
 }
 
+.header__burger {
+  display: flex;
+  align-items: center;
+}
+
 .header__logo {
   font-family: var(--logo-font);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: black;
-  margin-right: 93px;
 }
 
 .header__logo span {
   color: #2196f3;
 }
 
-.footer__logo {
-  font-family: var(--logo-font);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
+.header__burger {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
-.footer__logo span {
-  color: #2196f3;
+.header__burger-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .hero {

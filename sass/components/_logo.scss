@@ -7,18 +7,38 @@
 }
 
 .header__logo {
-  @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
+  @include logo(var(--logo-font), 24px, 700, 1.17, 0.03em);
   color: rgba(0, 0, 0, 1);
-  margin-right: 93px;
+  // margin-right: 93px;
   & span {
     color: rgb(33, 150, 243);
   }
 }
 
-.footer__logo {
-  @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
-  color: var(--primary-white-color);
-  & span {
-    color: rgb(33, 150, 243);
-  }
+.header__burger {
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
+
+.header__burger-icon {
+  width: 40px;
+  height: 40px;
+}
+
+// .header__logo {
+//   @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
+//   color: rgba(0, 0, 0, 1);
+//   margin-right: 93px;
+//   & span {
+//     color: rgb(33, 150, 243);
+//   }
+// }
+
+// .footer__logo {
+//   @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
+//   color: var(--primary-white-color);
+//   & span {
+//     color: rgb(33, 150, 243);
+//   }
+// }

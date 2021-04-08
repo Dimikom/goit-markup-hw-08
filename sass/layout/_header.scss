@@ -1,4 +1,6 @@
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .navigation__list {
@@ -7,6 +9,11 @@
 
 .header-contacts__list {
   display: none;
+}
+
+.header__burger {
+  display: flex;
+  align-items: center;
 }
 
 // .header {
