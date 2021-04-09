@@ -431,6 +431,19 @@ ol {
   height: 40px;
 }
 
+.header__logo {
+  font-family: var(--logo-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+.header__logo span {
+  color: #2196f3;
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -444,7 +457,7 @@ ol {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: pink;
+  background-color: var(--primary-white-color);
 }
 
 .mobile-menu.is-open {
@@ -493,6 +506,7 @@ ol {
 
 .mobile-menu__button:hover {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .mobile-menu__button-icon {
@@ -560,19 +574,6 @@ ol {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
-
-.header__logo {
-  font-family: var(--logo-font);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: black;
-}
-
-.header__logo span {
-  color: #2196f3;
 }
 
 .hero {
