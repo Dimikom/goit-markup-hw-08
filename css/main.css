@@ -399,36 +399,58 @@ ol {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 }
 
-.navigation__list {
-  display: none;
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+  .header-contacts__list {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+    align-items: center;
+  }
+  .header__burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .header__burger:hover {
+    fill: var(--accent-color);
+    outline: none;
+  }
+  .header__burger-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.header-contacts__list {
-  display: none;
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #ececec;
+    background-color: var(--primary-white-color);
+  }
 }
 
-.header__burger {
-  display: flex;
-  align-items: center;
-}
-
-.header__burger {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.header__burger:hover {
-  fill: var(--accent-color);
-  outline: none;
-}
-
-.header__burger-icon {
-  width: 40px;
-  height: 40px;
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header__logo {
@@ -444,6 +466,111 @@ ol {
   color: #2196f3;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 88px;
+  }
+  .navigation__item {
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .navigation__item + .navigation__item {
+    margin-left: 50px;
+  }
+  .navigation__link {
+    color: var(--title-text-color);
+    transition-property: color;
+    transition-duration: var(--accent-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation__link:hover, .navigation__link:focus {
+    color: var(--accent-color);
+  }
+  .navigation__link-current {
+    color: var(--accent-color);
+  }
+  .navigation__link-current::after {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 4px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 28px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+  .header-contacts__item {
+    list-style: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header-contacts__item a {
+    color: var(--prime-text-color);
+  }
+  .header-contacts__link {
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: var(--accent-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts__link:hover, .header-contacts__link:focus {
+    color: var(--accent-color);
+  }
+  .header-contacts__link .header-contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .header-contacts__link .header-contacts__icon-phone {
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .header-contacts__item {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .header-contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+  .header-contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -455,7 +582,7 @@ ol {
   max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
-  transform: translateY(-100%) translateX(-50%);
+  transform: translateY(-150%) translateX(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--primary-white-color);
 }
@@ -546,6 +673,7 @@ ol {
 
 .mobile-social__list {
   display: flex;
+  justify-content: flex-start;
   margin-top: 64px;
   margin-bottom: 48px;
 }

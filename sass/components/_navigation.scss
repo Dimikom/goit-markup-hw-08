@@ -1,51 +1,124 @@
-// .navigation {
-//   display: flex;
-//   align-items: center;
-// }
+.navigation {
+  display: flex;
+  align-items: center;
+}
+// Tablet 768px
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 88px;
+  }
 
-// .navigation__list {
-//   display: flex;
-// }
+  .navigation__item {
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
-// .navigation__item {
-//   position: relative;
-//   list-style: none;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
+    & + & {
+      margin-left: 50px;
+    }
+  }
 
-//   & + & {
-//     margin-left: 50px;
-//   }
-// }
+  .navigation__link {
+    color: var(--title-text-color);
+    transition-property: color;
+    transition-duration: var(--accent-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 
-// .navigation__link {
-//   color: var(--title-text-color);
-//   transition-property: color;
-//   transition-duration: var(--accent-duration);
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+  .navigation__link-current {
+    color: var(--accent-color);
 
-// .navigation__link-current {
-//   color: var(--accent-color);
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 4px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 28px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+  }
 
-//   &::after {
-//     position: absolute;
-//     display: block;
-//     content: '';
-//     height: 4px;
-//     width: 100%;
-//     margin: 0 auto;
-//     margin-top: 28px;
-//     border-radius: 2px;
-//     background-color: var(--accent-color);
-//   }
-// }
+  //tel + e-mail
+  .header-contacts__item {
+    list-style: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    & a {
+      color: var(--prime-text-color);
+    }
+  }
+
+  .header-contacts__link {
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: var(--accent-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    .header-contacts__icon-mail {
+      width: 14px;
+      height: 10px;
+      fill: currentColor;
+      margin-right: 10px;
+    }
+
+    .header-contacts__icon-phone {
+      width: 10px;
+      height: 14px;
+      fill: currentColor;
+      margin-right: 10px;
+    }
+  }
+}
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+  .header-contacts__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header-contacts__item {
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .header-contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+
+  .header-contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 // .header-contacts__list {
 //   display: flex;
@@ -65,30 +138,4 @@
 //   & a {
 //     color: var(--prime-text-color);
 //   }
-// }
-
-// .header-contacts__link {
-//   display: flex;
-//   align-items: center;
-//   transition-property: color;
-//   transition-duration: var(--accent-duration);
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .header-contacts__icon-mail {
-//   width: 16px;
-//   height: 12px;
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
-
-// .header-contacts__icon-phone {
-//   width: 10px;
-//   height: 16px;
-//   fill: currentColor;
-//   margin-right: 10px;
 // }
