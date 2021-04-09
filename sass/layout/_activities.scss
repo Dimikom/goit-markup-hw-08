@@ -1,61 +1,66 @@
 // Mobile 480x796
 @media screen and (max-width: 767px) {
+  .activities {
+    display: none;
+  }
 }
 
 // Tablet 768x3248
 @media screen and (min-width: 768px) {
+  .activities {
+    display: none;
+  }
 }
 
 //Desktop >1200
 @media screen and (min-width: 1200px) {
-}
-
-.activities {
-  padding-bottom: var(--section-inner-padding);
-  & .container {
-    display: flex;
+  .activities {
+    display: block;
+    padding-bottom: var(--section-inner-padding);
+    & .container {
+      display: flex;
+    }
   }
-}
+  .activities__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 
-.activities__title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
+  .activities__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+  }
 
-.activities__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-}
+  .activities__item {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
 
-.activities__item {
-  position: relative;
-  z-index: -1;
-  display: flex;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-}
-
-.activities__text {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--primary-white-color);
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  .activities__text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-white-color);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }

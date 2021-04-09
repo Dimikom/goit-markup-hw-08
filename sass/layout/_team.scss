@@ -1,3 +1,15 @@
+// Mobile 480x796
+@media screen and (max-width: 767px) {
+}
+
+// Tablet 768x3248
+@media screen and (min-width: 768px) {
+}
+
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+}
+
 .team {
   background: var(--team-section-bground);
   padding-top: var(--section-inner-padding);
