@@ -1,9 +1,11 @@
 .team-socials__list {
   display: flex;
+  justify-content: center;
 }
 
 .team-socials__item {
   margin-right: 10px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -20,6 +22,7 @@
   transition-property: background-color;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -29,6 +32,10 @@
 
 .team-social__icon {
   fill: currentColor;
+  &:last-child {
+    fill: currentColor;
+  }
+
   &:hover,
   &:focus {
     transition-property: fill;

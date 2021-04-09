@@ -196,49 +196,147 @@
 
         <ul class="activities__list list">
           <li class="activities__item">
-            <img
-              src="./images/speciality/image-01.jpg"
-              alt="programer working his desk office"
-              height="294"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/activities/image-01.webp    1x,
+                  ./images/activities/image-01@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/activities/image-01.jpg    1x,
+                  ./images/activities/image-01@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./images/activities/image-01.jpg"
+                alt="programer working his desk office"
+                height="294"
+              />
+            </picture>
             <p class="activities__text">Десктопные приложения</p>
           </li>
 
           <li class="activities__item">
-            <img
-              src="./images/speciality/image-02.jpg"
-              alt="web ui designers are developing smartphones application"
-              height="294"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/activities/image-02.webp    1x,
+                  ./images/activities/image-02@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/activities/image-02.jpg    1x,
+                  ./images/activities/image-02@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./images/activities/image-02.jpg"
+                alt="web ui designers are developing smartphones application"
+                height="294"
+              />
+            </picture>
             <p class="activities__text">Мобильные приложения</p>
           </li>
 
           <li class="activities__item">
-            <img
-              src="./images/speciality/image-03.jpg"
-              alt="creative artist web design with working colour selection graphic tablet"
-              height="294"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/activities/image-03.webp    1x,
+                  ./images/activities/image-03@2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/activities/image-03.jpg    1x,
+                  ./images/activities/image-03@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./images/activities/image-03.jpg"
+                alt="creative artist web design with working colour selection graphic tablet"
+                height="294"
+              />
+            </picture>
             <p class="activities__text">Дизайнерские решения</p>
           </li>
         </ul>
       </section>
       <!-- TEAM Section -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
 
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                src="./images/team/ihor/ihor.jpg"
-                alt="Ihor Demyanenko photo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor.webp    1x,
+                    ./images/team/ihor/ihor@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor.jpg    1x,
+                    ./images/team/ihor/ihor@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor-tablet.webp    1x,
+                    ./images/team/ihor/ihor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor-tablet.jpg    1x,
+                    ./images/team/ihor/ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor-mobile.webp    1x,
+                    ./images/team/ihor/ihor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor/ihor-mobile.jpg    1x,
+                    ./images/team/ihor/ihor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/ihor/ihor.jpg"
+                  alt="Ihor Demyanenko photo"
+                />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
+
                 <ul class="team-socials__list list">
                   <li class="team-socials__item">
                     <a href="" class="team-socials__link link">
@@ -247,6 +345,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="team-socials__item">
                     <a href="" class="team-socials__link link">
                       <svg class="team-social__icon" width="20px" height="20px">
@@ -254,6 +353,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="team-socials__item">
                     <a href="" class="team-socials__link link">
                       <svg class="team-social__icon" width="20px" height="20px">
@@ -261,6 +361,7 @@
                       </svg>
                     </a>
                   </li>
+
                   <li class="team-socials__item">
                     <a href="" class="team-socials__link link">
                       <svg class="team-social__icon" width="20px" height="20px">
@@ -273,12 +374,58 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/team/olga/olga.jpg"
-                alt="Olga Repina photo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olga/olga.webp    1x,
+                    ./images/team/olga/olga@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga/olga.jpg    1x,
+                    ./images/team/olga/olga@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga/olga-tablet.webp    1x,
+                    ./images/team/olga/olga-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga/olga-tablet.jpg    1x,
+                    ./images/team/olga/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga/olga-mobile.webp    1x,
+                    ./images/team/olga/olga-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga/olga-mobile.jpg    1x,
+                    ./images/team/olga/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/olga/olga.jpg"
+                  alt="Olga Repina photo"
+                />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession" lang="en">Frontend Developer</p>
@@ -316,12 +463,57 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/team/nikolay/nikolay.jpg"
-                alt="Nikolay Tarasov photo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay.webp    1x,
+                    ./images/team/nikolay/nikolay@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay.jpg    1x,
+                    ./images/team/nikolay/nikolay@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay-tablet.webp    1x,
+                    ./images/team/nikolay/nikolay-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay-tablet.jpg    1x,
+                    ./images/team/nikolay/nikolay-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay-mobile.webp    1x,
+                    ./images/team/nikolay/nikolay-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolay/nikolay-mobile.jpg    1x,
+                    ./images/team/nikolay/nikolay-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/nikolay/nikolay.jpg"
+                  alt="Nikolay Tarasov photo"
+                />
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
@@ -359,12 +551,58 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/team/michail/michail.jpg"
-                alt="Michail Ermakov photo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/michail/michail.webp    1x,
+                    ./images/team/michail/michail@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/michail/michail.jpg    1x,
+                    ./images/team/michail/michail@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/michail/michail-tablet.webp    1x,
+                    ./images/team/michail/michail-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/michail/michail-tablet.jpg    1x,
+                    ./images/team/michail/michail-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/michail/michail-mobile.webp    1x,
+                    ./images/team/michail/michail-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/michail/michail-mobile.jpg    1x,
+                    ./images/team/michail/michail-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/michail/michail.jpg"
+                  alt="Michail Ermakov photo"
+                />
+                <!-- width="270" height="260" -->
+              </picture>
               <div class="team__box">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
@@ -392,11 +630,7 @@
                   </li>
                   <li class="team-socials__item">
                     <a href="" class="team-socials__link link">
-                      <svg
-                        class="team-team-social__icon"
-                        width="20px"
-                        height="20px"
-                      >
+                      <svg class="team-social__icon" width="20px" height="20px">
                         <use href="./images/svg/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -406,7 +640,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- CUSTOMERS Section -->
       <!-- <section class="customers container">
         <h2 class="customers__title">Постоянные клиенты</h2>
