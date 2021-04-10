@@ -1,18 +1,20 @@
 .projects {
   background-color: var(--primary-white-color);
-  padding-top: var(--section-inner-padding);
+  padding-top: 60px;
 }
 /* --- filter---*/
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 25px;
 }
 
 .filter__item {
   display: inline-block;
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
@@ -118,4 +120,27 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
+}
+
+// Mobile 480
+@media screen and (max-width: 767px) {
+}
+
+// Tablet 768
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: var(--section-inner-padding);
+  }
+
+  .filter__list {
+    margin-bottom: 50px;
+  }
 }

@@ -1583,14 +1583,14 @@ ol {
 
 .projects {
   background-color: var(--primary-white-color);
-  padding-top: var(--section-inner-padding);
+  padding-top: 60px;
 }
 
 /* --- filter---*/
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .filter__item {
@@ -1599,6 +1599,7 @@ ol {
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__button {
@@ -1704,5 +1705,21 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .filter__list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: var(--section-inner-padding);
+  }
+  .filter__list {
+    margin-bottom: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
