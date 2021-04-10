@@ -6,7 +6,7 @@
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
-    margin-left: 88px;
+    margin-left: auto;
   }
 
   .navigation__item {
@@ -93,6 +93,10 @@
 }
 //Desktop >1200
 @media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-left: 88px;
+  }
+
   .header-contacts__list {
     display: flex;
     align-items: center;
