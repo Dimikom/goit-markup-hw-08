@@ -16,11 +16,11 @@
 //Desktop >1200
 @media screen and (min-width: 1200px) {
   .activities {
-    display: block;
+    display: flex;
     padding-bottom: var(--section-inner-padding);
-    & .container {
-      display: flex;
-    }
+    // & .container {
+    //   display: flex;
+    // }
   }
   .activities__title {
     color: var(--title-text-color);
