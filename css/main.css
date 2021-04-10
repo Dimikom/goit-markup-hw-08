@@ -467,6 +467,19 @@ ol {
   color: #2196f3;
 }
 
+.footer__logo {
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.footer__logo span {
+  color: #2196f3;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -1197,21 +1210,34 @@ ol {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .address-box {
   font-style: normal;
   margin-top: 20px;
-  padding-right: 12px;
-}
-
-.address-box__list:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .address-box__item .link {
@@ -1230,8 +1256,61 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.footer-socials {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .address-box {
+    padding-right: 0;
+  }
+  .address-box__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .address-box__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 61px;
+  }
+  .address-box {
+    padding-right: 0;
+  }
+  .address-box__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .address-box__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+  .address-box {
+    padding-right: 12px;
+  }
+  .address-box__list {
+    align-items: flex-start;
+  }
+  .address-box__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-socials__title {
@@ -1279,10 +1358,44 @@ ol {
   color: var(--primary-white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-socials {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .footer-socials__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+  .footer-socials__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    display: block;
+    margin-left: 70px;
+    margin-top: 12px;
+    margin-right: 0;
+  }
+  .footer-socials__title {
+    text-align: start;
+  }
+}
+
 .subscription__form {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
 }
 
 .subscription__title {
@@ -1344,6 +1457,76 @@ ol {
 
 .subscription__btn-icon {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscription__form {
+    margin-left: 0;
+    margin-top: 60px;
+    align-items: center;
+    width: 100%;
+  }
+  .subscription__title {
+    text-align: center;
+  }
+  .subscription__field {
+    display: block;
+    width: 100%;
+  }
+  .subscription__entry {
+    display: block;
+    width: 100%;
+  }
+  .subscription__button {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription__form {
+    display: flex;
+    margin-left: 151px;
+    margin-top: 60px;
+    width: 450px;
+  }
+  .subscription__field {
+    flex-direction: column;
+    width: 450px;
+  }
+  .subscription__button {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .subscription__entry {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__form {
+    margin-top: 12px;
+    margin-left: 93px;
+    margin-bottom: 12px;
+    width: 570px;
+  }
+  .subscription__title {
+    margin-bottom: 20px;
+  }
+  .subscription__field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscription__entry {
+    display: block;
+    width: 358px;
+  }
+  .subscription__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .projects {
