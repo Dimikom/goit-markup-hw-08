@@ -10,11 +10,14 @@
 
 .footer-socials__list {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .footer-socials__item {
   display: flex;
+  justify-content: center;
+  // margin-right: 0;
   flex-basis: calc(100% / 4 - 20px);
   margin-left: 10px;
   &:first-child {
@@ -52,6 +55,21 @@
   .footer-socials__title {
     text-align: center;
   }
+
+  .footer-socials__list {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .footer-socials__item {
+    margin-right: 0;
+    flex-basis: calc(100% / 4 - 20px);
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 // Tablet 768
@@ -66,7 +84,6 @@
     text-align: center;
   }
 }
-
 //Desktop >1200
 @media screen and (min-width: 1200px) {
   .footer-socials {

@@ -123,8 +123,8 @@
   align-items: center;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
   cursor: pointer;
@@ -164,5 +164,23 @@
     background: var(--accent-btn-color);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.15);
     border-radius: 4px;
+  }
+}
+
+// 320 - 480
+@media screen and (max-width: 480px) {
+  .modal-form__checkbox {
+    font-size: 10px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+  }
+}
+
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
   }
 }

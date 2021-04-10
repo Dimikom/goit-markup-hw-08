@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 580px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px 40px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
@@ -27,5 +27,28 @@
   &:focus {
     fill: var(--accent-color);
     outline: none;
+  }
+}
+// 320 - 480
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 90vw;
+    min-height: 80vh;
+  }
+}
+
+// Tablet 768
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+//Desktop >1200
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 580px;
   }
 }
