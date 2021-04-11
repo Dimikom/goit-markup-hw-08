@@ -2,6 +2,7 @@
   background-color: var(--primary-white-color);
   padding-top: 60px;
 }
+
 /* --- filter---*/
 .filter__list {
   display: flex;
@@ -128,6 +129,10 @@
 
 // Mobile 480
 @media screen and (max-width: 767px) {
+  .filter__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+
   .cards__item {
     flex-basis: calc(100% - var(--card-set-gap));
   }
@@ -139,6 +144,7 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+
   .cards__item {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
@@ -153,9 +159,11 @@
   .filter__list {
     margin-bottom: 50px;
   }
+
   .cards__list {
     padding-bottom: var(--section-inner-padding);
   }
+
   .cards__item {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
   }

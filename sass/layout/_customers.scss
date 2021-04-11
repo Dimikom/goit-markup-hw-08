@@ -69,6 +69,7 @@
   .customers__list {
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
   .customers__item {
     flex-basis: calc(100% / 3 - 30px);
